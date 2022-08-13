@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
 /**
- * 简单模式：只有一个消费者
+ * 简单模式：只有一个消费者 交换机使用默认的  AMQP Default
  */
 @Slf4j
 public class Producer {
