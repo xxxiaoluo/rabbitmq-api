@@ -1,0 +1,11 @@
+spring:
+  rabbitmq:
+    host: 192.168.64.100
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: roy-virtual-host-test
+    # 消费者每次只收一条消息，在当前消息没处理完之前不再接收消息
+    listener:
+      simple:
+        prefetch: 1
